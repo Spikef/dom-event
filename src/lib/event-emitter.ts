@@ -45,7 +45,7 @@ export default class EventEmitter {
 
         const { listeners, options } = this.eventCenter[event];
         if (listeners) {
-            const oneIndex:number[] = [];
+            const oneIndex:Array<number> = [];
             for (let i:number = 0; i < listeners.length; i++) {
                 const { once, currentTarget, useCapture, isDefault } = options[i];
                 if (

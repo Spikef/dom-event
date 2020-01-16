@@ -6,7 +6,7 @@ import EventEmitter from './event-emitter';
 
 export default class EventTarget {
     private readonly parent: EventTarget | null;
-    private readonly children: EventTarget[];
+    private readonly children: Array<EventTarget>;
 
     private target: any;
     private events: EventEmitter;
